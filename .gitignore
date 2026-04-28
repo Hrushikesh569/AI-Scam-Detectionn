@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+backend/.env
+
+# Python runtime and generated data
+__pycache__/
+*.pyc
+backend/data/scam_analysis.db
+backend/models/mlflow.db
+
+# Large model artifacts that exceed GitHub limits
+backend/models/scam_model/*.safetensors
+backend/models/scam_model/checkpoint-100/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
